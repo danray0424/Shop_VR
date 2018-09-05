@@ -10,8 +10,9 @@
 
 @interface ViewController : UIViewController
 
-@property (nonatomic, retain) IBOutlet UITextField  *searchTerm;
-@property (nonatomic, retain) IBOutlet UIButton     *searchButton;
+@property (nonatomic, retain) IBOutlet UITextField    *searchTerm;
+@property (nonatomic, retain) IBOutlet UIButton       *searchButton;
+@property (nonatomic, retain) IBOutlet UIActivityIndicatorView  *spinner;
 
 -(IBAction)search:(id)sender;
 

@@ -11,6 +11,6 @@
 
 @interface SearchResults : NSObject
 
-@property (nonatomic, retain) NSMutableArray<Product> *products;
+@property (nonatomic, retain) NSMutableArray<Product *> *products;
 
 @end

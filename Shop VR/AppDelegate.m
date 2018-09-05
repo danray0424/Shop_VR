@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -14,9 +15,13 @@
 
 @implementation AppDelegate
 
+UINavigationController *navigation;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    self.apikey = @"l7xx27cc84ed751d4f90b732d87240b2e0fa";
+    
     return YES;
 }
 
