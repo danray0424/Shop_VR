@@ -15,6 +15,10 @@
 		375A111A2140490B00B0A77B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 375A11192140490B00B0A77B /* main.m */; };
 		375A11242140490C00B0A77B /* Shop_VRTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 375A11232140490C00B0A77B /* Shop_VRTests.m */; };
 		375A112F2140490C00B0A77B /* Shop_VRUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 375A112E2140490C00B0A77B /* Shop_VRUITests.m */; };
+		375A113F21404BB800B0A77B /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 375A113E21404BB800B0A77B /* Product.m */; };
+		375A114221404BE500B0A77B /* SearchResults.m in Sources */ = {isa = PBXBuildFile; fileRef = 375A114121404BE500B0A77B /* SearchResults.m */; };
+		375A114521404E6A00B0A77B /* ResultsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 375A114421404E6A00B0A77B /* ResultsTableViewController.m */; };
+		375A1148214052C600B0A77B /* ARViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 375A1147214052C600B0A77B /* ARViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,14 @@
 		375A112A2140490C00B0A77B /* Shop VRUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Shop VRUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		375A112E2140490C00B0A77B /* Shop_VRUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Shop_VRUITests.m; sourceTree = "<group>"; };
 		375A11302140490C00B0A77B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		375A113D21404BB800B0A77B /* Product.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
+		375A113E21404BB800B0A77B /* Product.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
+		375A114021404BE500B0A77B /* SearchResults.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchResults.h; sourceTree = "<group>"; };
+		375A114121404BE500B0A77B /* SearchResults.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchResults.m; sourceTree = "<group>"; };
+		375A114321404E6A00B0A77B /* ResultsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResultsTableViewController.h; sourceTree = "<group>"; };
+		375A114421404E6A00B0A77B /* ResultsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ResultsTableViewController.m; sourceTree = "<group>"; };
+		375A1146214052C600B0A77B /* ARViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARViewController.h; sourceTree = "<group>"; };
+		375A1147214052C600B0A77B /* ARViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +113,10 @@
 		375A11092140490300B0A77B /* Shop VR */ = {
 			isa = PBXGroup;
 			children = (
+				375A1149214052E300B0A77B /* Controllers */,
+				375A113C21404B7400B0A77B /* Data */,
 				375A110A2140490300B0A77B /* AppDelegate.h */,
 				375A110B2140490300B0A77B /* AppDelegate.m */,
-				375A110D2140490300B0A77B /* ViewController.h */,
-				375A110E2140490400B0A77B /* ViewController.m */,
 				375A11102140490400B0A77B /* Main.storyboard */,
 				375A11132140490B00B0A77B /* Assets.xcassets */,
 				375A11152140490B00B0A77B /* LaunchScreen.storyboard */,
@@ -130,6 +142,30 @@
 				375A11302140490C00B0A77B /* Info.plist */,
 			);
 			path = "Shop VRUITests";
+			sourceTree = "<group>";
+		};
+		375A113C21404B7400B0A77B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				375A113D21404BB800B0A77B /* Product.h */,
+				375A113E21404BB800B0A77B /* Product.m */,
+				375A114021404BE500B0A77B /* SearchResults.h */,
+				375A114121404BE500B0A77B /* SearchResults.m */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		375A1149214052E300B0A77B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				375A110D2140490300B0A77B /* ViewController.h */,
+				375A110E2140490400B0A77B /* ViewController.m */,
+				375A114321404E6A00B0A77B /* ResultsTableViewController.h */,
+				375A114421404E6A00B0A77B /* ResultsTableViewController.m */,
+				375A1146214052C600B0A77B /* ARViewController.h */,
+				375A1147214052C600B0A77B /* ARViewController.m */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,7 +299,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				375A110F2140490400B0A77B /* ViewController.m in Sources */,
+				375A113F21404BB800B0A77B /* Product.m in Sources */,
+				375A114521404E6A00B0A77B /* ResultsTableViewController.m in Sources */,
+				375A114221404BE500B0A77B /* SearchResults.m in Sources */,
 				375A111A2140490B00B0A77B /* main.m in Sources */,
+				375A1148214052C600B0A77B /* ARViewController.m in Sources */,
 				375A110C2140490300B0A77B /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,14 +474,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L6JVZJ978D;
 				INFOPLIST_FILE = "Shop VR/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ray-solutions.Shop-VR";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -450,14 +492,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L6JVZJ978D;
 				INFOPLIST_FILE = "Shop VR/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ray-solutions.Shop-VR";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

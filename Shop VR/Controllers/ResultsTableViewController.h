@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ResultsTableViewController.h
 //  Shop VR
 //
 //  Created by Dan Ray on 9/5/18.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ResultsTableViewController : UITableViewController
 
 @end
-
