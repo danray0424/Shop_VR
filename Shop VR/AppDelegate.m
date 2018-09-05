@@ -20,7 +20,8 @@ UINavigationController *navigation;
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    self.apikey = @"l7xx27cc84ed751d4f90b732d87240b2e0fa";
+    [NSUserDefaults.standardUserDefaults setObject:@"l7xx27cc84ed751d4f90b732d87240b2e0fa" forKey:@"apikey"];
+    [NSUserDefaults.standardUserDefaults synchronize];
     
     return YES;
 }
