@@ -7,7 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <JSONModel/JSONModel.h>
 
-@interface Product : NSObject
+@interface Product : JSONModel
+
+@property (nonatomic) NSString *name;
+@property (nonatomic) NSString *imageURL;
+@property (nonatomic) NSString *shortDescription;
+@property (nonatomic) NSString *description;
+@property (nonatomic) NSString *brand;
 
 @end
