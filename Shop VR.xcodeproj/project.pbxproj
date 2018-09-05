@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07FD795F5470E27A0A5DEC69 /* libPods-Shop VRTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C729E76191A3378C716A78DE /* libPods-Shop VRTests.a */; };
+		15ED636E73C54AA93E7DAA30 /* libPods-Shop VRUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EA5AABBA3AD4DF7D3E1A87 /* libPods-Shop VRUITests.a */; };
 		375A110C2140490300B0A77B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 375A110B2140490300B0A77B /* AppDelegate.m */; };
 		375A110F2140490400B0A77B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 375A110E2140490400B0A77B /* ViewController.m */; };
 		375A11122140490400B0A77B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 375A11102140490400B0A77B /* Main.storyboard */; };
@@ -19,6 +21,7 @@
 		375A114221404BE500B0A77B /* SearchResults.m in Sources */ = {isa = PBXBuildFile; fileRef = 375A114121404BE500B0A77B /* SearchResults.m */; };
 		375A114521404E6A00B0A77B /* ResultsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 375A114421404E6A00B0A77B /* ResultsTableViewController.m */; };
 		375A1148214052C600B0A77B /* ARViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 375A1147214052C600B0A77B /* ARViewController.m */; };
+		9F40A37348574C5F991DACD1 /* libPods-Shop VR.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9B9B4F7EDAE11E704A59E6C /* libPods-Shop VR.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07EA5AABBA3AD4DF7D3E1A87 /* libPods-Shop VRUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Shop VRUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1509FA9ACBE6CAAE1339A555 /* Pods-Shop VRUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shop VRUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Shop VRUITests/Pods-Shop VRUITests.release.xcconfig"; sourceTree = "<group>"; };
 		375A11072140490300B0A77B /* Shop VR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shop VR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		375A110A2140490300B0A77B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		375A110B2140490300B0A77B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -63,6 +68,13 @@
 		375A114421404E6A00B0A77B /* ResultsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ResultsTableViewController.m; sourceTree = "<group>"; };
 		375A1146214052C600B0A77B /* ARViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARViewController.h; sourceTree = "<group>"; };
 		375A1147214052C600B0A77B /* ARViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARViewController.m; sourceTree = "<group>"; };
+		6B4501AB97B3CB9577933A90 /* Pods-Shop VRTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shop VRTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Shop VRTests/Pods-Shop VRTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7F39047C3B77A3AD239BF5CB /* Pods-Shop VR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shop VR.release.xcconfig"; path = "Pods/Target Support Files/Pods-Shop VR/Pods-Shop VR.release.xcconfig"; sourceTree = "<group>"; };
+		85BC477084C1CFB91731A807 /* Pods-Shop VRTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shop VRTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Shop VRTests/Pods-Shop VRTests.release.xcconfig"; sourceTree = "<group>"; };
+		915581AC020C5594D4953319 /* Pods-Shop VR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shop VR.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Shop VR/Pods-Shop VR.debug.xcconfig"; sourceTree = "<group>"; };
+		A9B9B4F7EDAE11E704A59E6C /* libPods-Shop VR.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Shop VR.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1F80CFF6974F4EF733B0094 /* Pods-Shop VRUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shop VRUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Shop VRUITests/Pods-Shop VRUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C729E76191A3378C716A78DE /* libPods-Shop VRTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Shop VRTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F40A37348574C5F991DACD1 /* libPods-Shop VR.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07FD795F5470E27A0A5DEC69 /* libPods-Shop VRTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15ED636E73C54AA93E7DAA30 /* libPods-Shop VRUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +112,8 @@
 				375A11222140490C00B0A77B /* Shop VRTests */,
 				375A112D2140490C00B0A77B /* Shop VRUITests */,
 				375A11082140490300B0A77B /* Products */,
+				40C6A87C96DBA6A24DF03A41 /* Pods */,
+				4C86F7A8AB0F2801F7A83451 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -168,6 +185,29 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		40C6A87C96DBA6A24DF03A41 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				915581AC020C5594D4953319 /* Pods-Shop VR.debug.xcconfig */,
+				7F39047C3B77A3AD239BF5CB /* Pods-Shop VR.release.xcconfig */,
+				6B4501AB97B3CB9577933A90 /* Pods-Shop VRTests.debug.xcconfig */,
+				85BC477084C1CFB91731A807 /* Pods-Shop VRTests.release.xcconfig */,
+				B1F80CFF6974F4EF733B0094 /* Pods-Shop VRUITests.debug.xcconfig */,
+				1509FA9ACBE6CAAE1339A555 /* Pods-Shop VRUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4C86F7A8AB0F2801F7A83451 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9B9B4F7EDAE11E704A59E6C /* libPods-Shop VR.a */,
+				C729E76191A3378C716A78DE /* libPods-Shop VRTests.a */,
+				07EA5AABBA3AD4DF7D3E1A87 /* libPods-Shop VRUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -175,6 +215,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 375A11332140490C00B0A77B /* Build configuration list for PBXNativeTarget "Shop VR" */;
 			buildPhases = (
+				0C060A37BF5AA98170A69A5C /* [CP] Check Pods Manifest.lock */,
 				375A11032140490300B0A77B /* Sources */,
 				375A11042140490300B0A77B /* Frameworks */,
 				375A11052140490300B0A77B /* Resources */,
@@ -192,6 +233,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 375A11362140490C00B0A77B /* Build configuration list for PBXNativeTarget "Shop VRTests" */;
 			buildPhases = (
+				016FBEAD48461EB573ADAA96 /* [CP] Check Pods Manifest.lock */,
 				375A111B2140490C00B0A77B /* Sources */,
 				375A111C2140490C00B0A77B /* Frameworks */,
 				375A111D2140490C00B0A77B /* Resources */,
@@ -210,6 +252,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 375A11392140490C00B0A77B /* Build configuration list for PBXNativeTarget "Shop VRUITests" */;
 			buildPhases = (
+				8C96B1BFD3FD6B8B1C4A8573 /* [CP] Check Pods Manifest.lock */,
 				375A11262140490C00B0A77B /* Sources */,
 				375A11272140490C00B0A77B /* Frameworks */,
 				375A11282140490C00B0A77B /* Resources */,
@@ -292,6 +335,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		016FBEAD48461EB573ADAA96 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Shop VRTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0C060A37BF5AA98170A69A5C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Shop VR-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C96B1BFD3FD6B8B1C4A8573 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Shop VRUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		375A11032140490300B0A77B /* Sources */ = {
@@ -471,6 +583,7 @@
 		};
 		375A11342140490C00B0A77B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 915581AC020C5594D4953319 /* Pods-Shop VR.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -489,6 +602,7 @@
 		};
 		375A11352140490C00B0A77B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F39047C3B77A3AD239BF5CB /* Pods-Shop VR.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -507,6 +621,7 @@
 		};
 		375A11372140490C00B0A77B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B4501AB97B3CB9577933A90 /* Pods-Shop VRTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -525,6 +640,7 @@
 		};
 		375A11382140490C00B0A77B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85BC477084C1CFB91731A807 /* Pods-Shop VRTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -543,6 +659,7 @@
 		};
 		375A113A2140490C00B0A77B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1F80CFF6974F4EF733B0094 /* Pods-Shop VRUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Shop VRUITests/Info.plist";
@@ -560,6 +677,7 @@
 		};
 		375A113B2140490C00B0A77B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1509FA9ACBE6CAAE1339A555 /* Pods-Shop VRUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Shop VRUITests/Info.plist";
