@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		375A110C2140490300B0A77B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 375A110B2140490300B0A77B /* AppDelegate.m */; };
+		375A110F2140490400B0A77B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 375A110E2140490400B0A77B /* ViewController.m */; };
+		375A11122140490400B0A77B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 375A11102140490400B0A77B /* Main.storyboard */; };
+		375A11142140490B00B0A77B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 375A11132140490B00B0A77B /* Assets.xcassets */; };
+		375A11172140490B00B0A77B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 375A11152140490B00B0A77B /* LaunchScreen.storyboard */; };
+		375A111A2140490B00B0A77B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 375A11192140490B00B0A77B /* main.m */; };
+		375A11242140490C00B0A77B /* Shop_VRTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 375A11232140490C00B0A77B /* Shop_VRTests.m */; };
+		375A112F2140490C00B0A77B /* Shop_VRUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 375A112E2140490C00B0A77B /* Shop_VRUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		375A11202140490C00B0A77B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 375A10FF2140490300B0A77B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 375A11062140490300B0A77B;
+			remoteInfo = "Shop VR";
+		};
+		375A112B2140490C00B0A77B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 375A10FF2140490300B0A77B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 375A11062140490300B0A77B;
+			remoteInfo = "Shop VR";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		375A11072140490300B0A77B /* Shop VR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shop VR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		375A110A2140490300B0A77B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		375A110B2140490300B0A77B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		375A110D2140490300B0A77B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		375A110E2140490400B0A77B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		375A11112140490400B0A77B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		375A11132140490B00B0A77B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		375A11162140490B00B0A77B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		375A11182140490B00B0A77B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		375A11192140490B00B0A77B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		375A111F2140490C00B0A77B /* Shop VRTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Shop VRTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		375A11232140490C00B0A77B /* Shop_VRTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Shop_VRTests.m; sourceTree = "<group>"; };
+		375A11252140490C00B0A77B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		375A112A2140490C00B0A77B /* Shop VRUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Shop VRUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		375A112E2140490C00B0A77B /* Shop_VRUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Shop_VRUITests.m; sourceTree = "<group>"; };
+		375A11302140490C00B0A77B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		375A11042140490300B0A77B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		375A111C2140490C00B0A77B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		375A11272140490C00B0A77B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		375A10FE2140490300B0A77B = {
+			isa = PBXGroup;
+			children = (
+				375A11092140490300B0A77B /* Shop VR */,
+				375A11222140490C00B0A77B /* Shop VRTests */,
+				375A112D2140490C00B0A77B /* Shop VRUITests */,
+				375A11082140490300B0A77B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		375A11082140490300B0A77B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				375A11072140490300B0A77B /* Shop VR.app */,
+				375A111F2140490C00B0A77B /* Shop VRTests.xctest */,
+				375A112A2140490C00B0A77B /* Shop VRUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		375A11092140490300B0A77B /* Shop VR */ = {
+			isa = PBXGroup;
+			children = (
+				375A110A2140490300B0A77B /* AppDelegate.h */,
+				375A110B2140490300B0A77B /* AppDelegate.m */,
+				375A110D2140490300B0A77B /* ViewController.h */,
+				375A110E2140490400B0A77B /* ViewController.m */,
+				375A11102140490400B0A77B /* Main.storyboard */,
+				375A11132140490B00B0A77B /* Assets.xcassets */,
+				375A11152140490B00B0A77B /* LaunchScreen.storyboard */,
+				375A11182140490B00B0A77B /* Info.plist */,
+				375A11192140490B00B0A77B /* main.m */,
+			);
+			path = "Shop VR";
+			sourceTree = "<group>";
+		};
+		375A11222140490C00B0A77B /* Shop VRTests */ = {
+			isa = PBXGroup;
+			children = (
+				375A11232140490C00B0A77B /* Shop_VRTests.m */,
+				375A11252140490C00B0A77B /* Info.plist */,
+			);
+			path = "Shop VRTests";
+			sourceTree = "<group>";
+		};
+		375A112D2140490C00B0A77B /* Shop VRUITests */ = {
+			isa = PBXGroup;
+			children = (
+				375A112E2140490C00B0A77B /* Shop_VRUITests.m */,
+				375A11302140490C00B0A77B /* Info.plist */,
+			);
+			path = "Shop VRUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		375A11062140490300B0A77B /* Shop VR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 375A11332140490C00B0A77B /* Build configuration list for PBXNativeTarget "Shop VR" */;
+			buildPhases = (
+				375A11032140490300B0A77B /* Sources */,
+				375A11042140490300B0A77B /* Frameworks */,
+				375A11052140490300B0A77B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Shop VR";
+			productName = "Shop VR";
+			productReference = 375A11072140490300B0A77B /* Shop VR.app */;
+			productType = "com.apple.product-type.application";
+		};
+		375A111E2140490C00B0A77B /* Shop VRTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 375A11362140490C00B0A77B /* Build configuration list for PBXNativeTarget "Shop VRTests" */;
+			buildPhases = (
+				375A111B2140490C00B0A77B /* Sources */,
+				375A111C2140490C00B0A77B /* Frameworks */,
+				375A111D2140490C00B0A77B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				375A11212140490C00B0A77B /* PBXTargetDependency */,
+			);
+			name = "Shop VRTests";
+			productName = "Shop VRTests";
+			productReference = 375A111F2140490C00B0A77B /* Shop VRTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		375A11292140490C00B0A77B /* Shop VRUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 375A11392140490C00B0A77B /* Build configuration list for PBXNativeTarget "Shop VRUITests" */;
+			buildPhases = (
+				375A11262140490C00B0A77B /* Sources */,
+				375A11272140490C00B0A77B /* Frameworks */,
+				375A11282140490C00B0A77B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				375A112C2140490C00B0A77B /* PBXTargetDependency */,
+			);
+			name = "Shop VRUITests";
+			productName = "Shop VRUITests";
+			productReference = 375A112A2140490C00B0A77B /* Shop VRUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		375A10FF2140490300B0A77B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Ray Solutions";
+				TargetAttributes = {
+					375A11062140490300B0A77B = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					375A111E2140490C00B0A77B = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 375A11062140490300B0A77B;
+					};
+					375A11292140490C00B0A77B = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 375A11062140490300B0A77B;
+					};
+				};
+			};
+			buildConfigurationList = 375A11022140490300B0A77B /* Build configuration list for PBXProject "Shop VR" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 375A10FE2140490300B0A77B;
+			productRefGroup = 375A11082140490300B0A77B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				375A11062140490300B0A77B /* Shop VR */,
+				375A111E2140490C00B0A77B /* Shop VRTests */,
+				375A11292140490C00B0A77B /* Shop VRUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		375A11052140490300B0A77B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				375A11172140490B00B0A77B /* LaunchScreen.storyboard in Resources */,
+				375A11142140490B00B0A77B /* Assets.xcassets in Resources */,
+				375A11122140490400B0A77B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		375A111D2140490C00B0A77B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		375A11282140490C00B0A77B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		375A11032140490300B0A77B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				375A110F2140490400B0A77B /* ViewController.m in Sources */,
+				375A111A2140490B00B0A77B /* main.m in Sources */,
+				375A110C2140490300B0A77B /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		375A111B2140490C00B0A77B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				375A11242140490C00B0A77B /* Shop_VRTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		375A11262140490C00B0A77B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				375A112F2140490C00B0A77B /* Shop_VRUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		375A11212140490C00B0A77B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 375A11062140490300B0A77B /* Shop VR */;
+			targetProxy = 375A11202140490C00B0A77B /* PBXContainerItemProxy */;
+		};
+		375A112C2140490C00B0A77B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 375A11062140490300B0A77B /* Shop VR */;
+			targetProxy = 375A112B2140490C00B0A77B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		375A11102140490400B0A77B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				375A11112140490400B0A77B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		375A11152140490B00B0A77B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				375A11162140490B00B0A77B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		375A11312140490C00B0A77B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		375A11322140490C00B0A77B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		375A11342140490C00B0A77B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Shop VR/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ray-solutions.Shop-VR";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		375A11352140490C00B0A77B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Shop VR/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ray-solutions.Shop-VR";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		375A11372140490C00B0A77B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Shop VRTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ray-solutions.Shop-VRTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shop VR.app/Shop VR";
+			};
+			name = Debug;
+		};
+		375A11382140490C00B0A77B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Shop VRTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ray-solutions.Shop-VRTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shop VR.app/Shop VR";
+			};
+			name = Release;
+		};
+		375A113A2140490C00B0A77B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Shop VRUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ray-solutions.Shop-VRUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Shop VR";
+			};
+			name = Debug;
+		};
+		375A113B2140490C00B0A77B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Shop VRUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ray-solutions.Shop-VRUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Shop VR";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		375A11022140490300B0A77B /* Build configuration list for PBXProject "Shop VR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				375A11312140490C00B0A77B /* Debug */,
+				375A11322140490C00B0A77B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		375A11332140490C00B0A77B /* Build configuration list for PBXNativeTarget "Shop VR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				375A11342140490C00B0A77B /* Debug */,
+				375A11352140490C00B0A77B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		375A11362140490C00B0A77B /* Build configuration list for PBXNativeTarget "Shop VRTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				375A11372140490C00B0A77B /* Debug */,
+				375A11382140490C00B0A77B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		375A11392140490C00B0A77B /* Build configuration list for PBXNativeTarget "Shop VRUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				375A113A2140490C00B0A77B /* Debug */,
+				375A113B2140490C00B0A77B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 375A10FF2140490300B0A77B /* Project object */;
+}
