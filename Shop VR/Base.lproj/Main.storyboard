@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ko7-F2-1pF">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -12,13 +12,13 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="searchController" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jpf-Pe-WdM">
-                                <rect key="frame" x="54" y="202" width="267" height="30"/>
+                                <rect key="frame" x="54" y="136" width="267" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="267" id="d3B-Nb-EPw"/>
                                 </constraints>
@@ -27,37 +27,46 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RAb-6g-zs4">
-                                <rect key="frame" x="161" y="248" width="54" height="30"/>
+                                <rect key="frame" x="161" y="182" width="54" height="30"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
                                 <state key="normal" title="Search"/>
                                 <connections>
                                     <action selector="search:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j3l-15-jiN"/>
-                                    <segue destination="xmE-pp-YXN" kind="show" id="Qv5-al-FSI"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="wux-4q-hUN">
+                                <rect key="frame" x="177" y="217" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="0jL-6K-r6F"/>
+                                </constraints>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Jpf-Pe-WdM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="182" id="GDT-2Z-dSc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="Jpf-Pe-WdM" secondAttribute="bottom" constant="-102" id="HLe-WV-Swa"/>
                             <constraint firstItem="RAb-6g-zs4" firstAttribute="top" secondItem="Jpf-Pe-WdM" secondAttribute="bottom" constant="16" id="NQp-gH-kqF"/>
                             <constraint firstItem="Jpf-Pe-WdM" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="VEa-Ua-JTf"/>
+                            <constraint firstItem="wux-4q-hUN" firstAttribute="top" secondItem="RAb-6g-zs4" secondAttribute="bottom" constant="5" id="W8X-Hb-VFv"/>
                             <constraint firstItem="RAb-6g-zs4" firstAttribute="centerX" secondItem="Jpf-Pe-WdM" secondAttribute="centerX" id="uRw-sX-FyI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wux-4q-hUN" secondAttribute="trailing" constant="178" id="zy0-vN-Sdv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="u9H-0b-Q33"/>
                     <connections>
                         <outlet property="searchButton" destination="RAb-6g-zs4" id="5RJ-55-Iui"/>
                         <outlet property="searchTerm" destination="Jpf-Pe-WdM" id="jxB-2k-bzK"/>
+                        <outlet property="spinner" destination="wux-4q-hUN" id="Rkk-k2-7hg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+            <point key="canvasLocation" x="1076" y="133.5832083958021"/>
         </scene>
         <!--Results Table View Controller-->
         <scene sceneID="azP-fF-vXe">
             <objects>
-                <tableViewController id="xmE-pp-YXN" customClass="ResultsTableViewController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="resultsController" id="xmE-pp-YXN" customClass="ResultsTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="IXW-zj-a1c">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -70,9 +79,6 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="jXk-Sz-XmN" kind="show" id="yKG-Tn-Ys9"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -83,12 +89,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EjM-bd-nie" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="841" y="134"/>
+            <point key="canvasLocation" x="1780" y="133.5832083958021"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="fw6-PZ-mbJ">
             <objects>
-                <viewController id="jXk-Sz-XmN" customClass="ARViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ARController" id="jXk-Sz-XmN" customClass="ARViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SYt-Xo-yIV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -109,7 +115,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zBB-eH-Yka" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1549.5999999999999" y="134.48275862068968"/>
+            <point key="canvasLocation" x="2488.8000000000002" y="134.48275862068968"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0C2-sF-h9N">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ko7-F2-1pF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="y1t-CF-NHb">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="iLU-k7-ySI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rcK-i1-hA9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>
