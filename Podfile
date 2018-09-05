@@ -6,7 +6,7 @@ target 'Shop VR' do
   # use_frameworks!
 
   # Pods for Shop VR
-pod 'RestKit'
+pod 'JSONModel'
 pod 'SDWebImage'
 
   target 'Shop VRTests' do

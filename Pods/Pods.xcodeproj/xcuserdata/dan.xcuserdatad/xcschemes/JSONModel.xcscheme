@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FE526824B2CC6361986A8455B1E99909"
-               BuildableName = "libRestKit.a"
-               BlueprintName = "RestKit"
+               BlueprintIdentifier = "8B4FC04207C8B6BE67DF9E46D9BD43C9"
+               BuildableName = "libJSONModel.a"
+               BlueprintName = "JSONModel"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FE526824B2CC6361986A8455B1E99909"
-            BuildableName = "libRestKit.a"
-            BlueprintName = "RestKit"
+            BlueprintIdentifier = "8B4FC04207C8B6BE67DF9E46D9BD43C9"
+            BuildableName = "libJSONModel.a"
+            BlueprintName = "JSONModel"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
