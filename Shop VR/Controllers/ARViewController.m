@@ -55,7 +55,7 @@
 #pragma mark - Getters
 
 -(void)initialGetter {
-    
+    // Set up initial controllers and delegates
     if (!self.alertController) {
         self.alertController = [[ARAlertController alloc] init];
         self.alertController.viewController = self;
@@ -78,8 +78,8 @@
 - (void)setupSceneView {
     
     self.sceneView.delegate = self.sceneControl;
-    self.sceneView.autoenablesDefaultLighting = YES;
-    self.sceneView.showsStatistics = YES;
+    self.sceneView.automaticallyUpdatesLighting = YES;
+    self.sceneView.showsStatistics = NO;
 }
 
 - (void)setupScene {
