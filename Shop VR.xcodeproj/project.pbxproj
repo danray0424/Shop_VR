@@ -21,6 +21,7 @@
 		375A114221404BE500B0A77B /* SearchResults.m in Sources */ = {isa = PBXBuildFile; fileRef = 375A114121404BE500B0A77B /* SearchResults.m */; };
 		375A114521404E6A00B0A77B /* ResultsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 375A114421404E6A00B0A77B /* ResultsTableViewController.m */; };
 		375A1148214052C600B0A77B /* ARViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 375A1147214052C600B0A77B /* ARViewController.m */; };
+		3786576921414D820097D43E /* ProductDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3786576821414D820097D43E /* ProductDetailViewController.m */; };
 		9F40A37348574C5F991DACD1 /* libPods-Shop VR.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9B9B4F7EDAE11E704A59E6C /* libPods-Shop VR.a */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +69,8 @@
 		375A114421404E6A00B0A77B /* ResultsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ResultsTableViewController.m; sourceTree = "<group>"; };
 		375A1146214052C600B0A77B /* ARViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARViewController.h; sourceTree = "<group>"; };
 		375A1147214052C600B0A77B /* ARViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARViewController.m; sourceTree = "<group>"; };
+		3786576721414D820097D43E /* ProductDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductDetailViewController.h; sourceTree = "<group>"; };
+		3786576821414D820097D43E /* ProductDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductDetailViewController.m; sourceTree = "<group>"; };
 		6B4501AB97B3CB9577933A90 /* Pods-Shop VRTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shop VRTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Shop VRTests/Pods-Shop VRTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7F39047C3B77A3AD239BF5CB /* Pods-Shop VR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shop VR.release.xcconfig"; path = "Pods/Target Support Files/Pods-Shop VR/Pods-Shop VR.release.xcconfig"; sourceTree = "<group>"; };
 		85BC477084C1CFB91731A807 /* Pods-Shop VRTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shop VRTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Shop VRTests/Pods-Shop VRTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -181,6 +184,8 @@
 				375A114421404E6A00B0A77B /* ResultsTableViewController.m */,
 				375A1146214052C600B0A77B /* ARViewController.h */,
 				375A1147214052C600B0A77B /* ARViewController.m */,
+				3786576721414D820097D43E /* ProductDetailViewController.h */,
+				3786576821414D820097D43E /* ProductDetailViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -342,15 +347,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-Shop VRTests-checkManifestLockResult.txt",
 			);
@@ -364,15 +365,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-Shop VR-checkManifestLockResult.txt",
 			);
@@ -386,15 +383,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-Shop VRUITests-checkManifestLockResult.txt",
 			);
@@ -413,6 +406,7 @@
 				375A110F2140490400B0A77B /* ViewController.m in Sources */,
 				375A113F21404BB800B0A77B /* Product.m in Sources */,
 				375A114521404E6A00B0A77B /* ResultsTableViewController.m in Sources */,
+				3786576921414D820097D43E /* ProductDetailViewController.m in Sources */,
 				375A114221404BE500B0A77B /* SearchResults.m in Sources */,
 				375A111A2140490B00B0A77B /* main.m in Sources */,
 				375A1148214052C600B0A77B /* ARViewController.m in Sources */,
