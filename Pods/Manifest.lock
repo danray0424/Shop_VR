@@ -1,22 +1,18 @@
 PODS:
-  - JSONModel (1.2.0)
   - SDWebImage (3.8.1):
     - SDWebImage/Core (= 3.8.1)
   - SDWebImage/Core (3.8.1)
 
 DEPENDENCIES:
-  - JSONModel
   - SDWebImage
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - JSONModel
     - SDWebImage
 
 SPEC CHECKSUMS:
-  JSONModel: 12523685c4b623553ccf844bbbf7007624317b2c
   SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
 
-PODFILE CHECKSUM: 810596dfbafb207a50194a30e45f024f2b9b64c4
+PODFILE CHECKSUM: c7038ebecb76b2d002f273ceae224caf9c326eec
 
 COCOAPODS: 1.5.3
