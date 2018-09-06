@@ -6,17 +6,16 @@
 //  Copyright © 2018 Ray Solutions. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "SearchViewController.h"
 #import "ResultsTableViewController.h"
-#import <JSONModel/JSONModel.h>
 #import "Product.h"
 #import "SearchResults.h"
 
-@interface ViewController ()
+@interface SearchViewController ()
 
 @end
 
-@implementation ViewController
+@implementation SearchViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -66,6 +65,7 @@
                                                     item.imageURL = [[images objectAtIndex:[images count] - 1] objectForKey:@"url"];
                                                     item.shortDescription  = [product objectForKey:@"shortDescription"];
                                                     item.brand = [product objectForKey:@"brand"];
+                                                    item.productID = [product objectForKey:@"id"];
                                                     
                                                     [results.products addObject:item];
                                                 }

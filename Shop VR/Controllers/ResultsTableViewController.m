@@ -7,8 +7,8 @@
 //
 
 #import "ResultsTableViewController.h"
+#import "ProductDetailViewController.h"
 #import "SearchResults.h"
-#import <SDWebImage/UIImageView+WebCache.h>
 
 @interface ResultsTableViewController ()
 
@@ -48,13 +48,14 @@
  
     Product *product = (Product *)[self.results.products objectAtIndex:indexPath.row];
     cell.textLabel.text = product.name;
-    [cell.imageView sd_setImageWithURL:[NSURL URLWithString:product.imageURL]];
     return cell;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
+    ProductDetailViewController *detail = [self.storyboard instantiateViewControllerWithIdentifier:@"detailController"];
+    detail.product = (Product *)[self.results.products objectAtIndex:indexPath.row];
+    [self.navigationController pushViewController:detail animated:YES];
 }
 
 

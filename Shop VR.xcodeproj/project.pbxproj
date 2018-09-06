@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		07FD795F5470E27A0A5DEC69 /* libPods-Shop VRTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C729E76191A3378C716A78DE /* libPods-Shop VRTests.a */; };
 		15ED636E73C54AA93E7DAA30 /* libPods-Shop VRUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EA5AABBA3AD4DF7D3E1A87 /* libPods-Shop VRUITests.a */; };
+		3725B5B22141AFCD0015F59B /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3725B5B12141AFCC0015F59B /* WebKit.framework */; };
 		375A110C2140490300B0A77B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 375A110B2140490300B0A77B /* AppDelegate.m */; };
-		375A110F2140490400B0A77B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 375A110E2140490400B0A77B /* ViewController.m */; };
+		375A110F2140490400B0A77B /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 375A110E2140490400B0A77B /* SearchViewController.m */; };
 		375A11122140490400B0A77B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 375A11102140490400B0A77B /* Main.storyboard */; };
 		375A11142140490B00B0A77B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 375A11132140490B00B0A77B /* Assets.xcassets */; };
-		375A11172140490B00B0A77B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 375A11152140490B00B0A77B /* LaunchScreen.storyboard */; };
+		375A11172140490B00B0A77B /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 375A11152140490B00B0A77B /* Search.storyboard */; };
 		375A111A2140490B00B0A77B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 375A11192140490B00B0A77B /* main.m */; };
 		375A11242140490C00B0A77B /* Shop_VRTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 375A11232140490C00B0A77B /* Shop_VRTests.m */; };
 		375A112F2140490C00B0A77B /* Shop_VRUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 375A112E2140490C00B0A77B /* Shop_VRUITests.m */; };
@@ -22,6 +23,10 @@
 		375A114521404E6A00B0A77B /* ResultsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 375A114421404E6A00B0A77B /* ResultsTableViewController.m */; };
 		375A1148214052C600B0A77B /* ARViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 375A1147214052C600B0A77B /* ARViewController.m */; };
 		3786576921414D820097D43E /* ProductDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3786576821414D820097D43E /* ProductDetailViewController.m */; };
+		3786576B2141517D0097D43E /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3786576A2141517D0097D43E /* README.txt */; };
+		378657762141656B0097D43E /* ARSCNViewControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 378657702141656B0097D43E /* ARSCNViewControl.m */; };
+		378657772141656B0097D43E /* ARAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 378657712141656B0097D43E /* ARAlertController.m */; };
+		378657782141656B0097D43E /* ARGestureControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 378657742141656B0097D43E /* ARGestureControl.m */; };
 		9F40A37348574C5F991DACD1 /* libPods-Shop VR.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9B9B4F7EDAE11E704A59E6C /* libPods-Shop VR.a */; };
 /* End PBXBuildFile section */
 
@@ -45,14 +50,15 @@
 /* Begin PBXFileReference section */
 		07EA5AABBA3AD4DF7D3E1A87 /* libPods-Shop VRUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Shop VRUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1509FA9ACBE6CAAE1339A555 /* Pods-Shop VRUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shop VRUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Shop VRUITests/Pods-Shop VRUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3725B5B12141AFCC0015F59B /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		375A11072140490300B0A77B /* Shop VR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shop VR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		375A110A2140490300B0A77B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		375A110B2140490300B0A77B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		375A110D2140490300B0A77B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		375A110E2140490400B0A77B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		375A110D2140490300B0A77B /* SearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		375A110E2140490400B0A77B /* SearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		375A11112140490400B0A77B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		375A11132140490B00B0A77B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		375A11162140490B00B0A77B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		375A11162140490B00B0A77B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Search.storyboard; sourceTree = "<group>"; };
 		375A11182140490B00B0A77B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		375A11192140490B00B0A77B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		375A111F2140490C00B0A77B /* Shop VRTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Shop VRTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +77,13 @@
 		375A1147214052C600B0A77B /* ARViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARViewController.m; sourceTree = "<group>"; };
 		3786576721414D820097D43E /* ProductDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductDetailViewController.h; sourceTree = "<group>"; };
 		3786576821414D820097D43E /* ProductDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductDetailViewController.m; sourceTree = "<group>"; };
+		3786576A2141517D0097D43E /* README.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		378657702141656B0097D43E /* ARSCNViewControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARSCNViewControl.m; sourceTree = "<group>"; };
+		378657712141656B0097D43E /* ARAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARAlertController.m; sourceTree = "<group>"; };
+		378657722141656B0097D43E /* ARAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARAlertController.h; sourceTree = "<group>"; };
+		378657732141656B0097D43E /* ARGestureControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARGestureControl.h; sourceTree = "<group>"; };
+		378657742141656B0097D43E /* ARGestureControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARGestureControl.m; sourceTree = "<group>"; };
+		378657752141656B0097D43E /* ARSCNViewControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARSCNViewControl.h; sourceTree = "<group>"; };
 		6B4501AB97B3CB9577933A90 /* Pods-Shop VRTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shop VRTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Shop VRTests/Pods-Shop VRTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7F39047C3B77A3AD239BF5CB /* Pods-Shop VR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shop VR.release.xcconfig"; path = "Pods/Target Support Files/Pods-Shop VR/Pods-Shop VR.release.xcconfig"; sourceTree = "<group>"; };
 		85BC477084C1CFB91731A807 /* Pods-Shop VRTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shop VRTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Shop VRTests/Pods-Shop VRTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -85,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3725B5B22141AFCD0015F59B /* WebKit.framework in Frameworks */,
 				9F40A37348574C5F991DACD1 /* libPods-Shop VR.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -111,6 +125,7 @@
 		375A10FE2140490300B0A77B = {
 			isa = PBXGroup;
 			children = (
+				3786576A2141517D0097D43E /* README.txt */,
 				375A11092140490300B0A77B /* Shop VR */,
 				375A11222140490C00B0A77B /* Shop VRTests */,
 				375A112D2140490C00B0A77B /* Shop VRUITests */,
@@ -139,7 +154,7 @@
 				375A110B2140490300B0A77B /* AppDelegate.m */,
 				375A11102140490400B0A77B /* Main.storyboard */,
 				375A11132140490B00B0A77B /* Assets.xcassets */,
-				375A11152140490B00B0A77B /* LaunchScreen.storyboard */,
+				375A11152140490B00B0A77B /* Search.storyboard */,
 				375A11182140490B00B0A77B /* Info.plist */,
 				375A11192140490B00B0A77B /* main.m */,
 			);
@@ -178,8 +193,9 @@
 		375A1149214052E300B0A77B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				375A110D2140490300B0A77B /* ViewController.h */,
-				375A110E2140490400B0A77B /* ViewController.m */,
+				3786576F214164B30097D43E /* AR Helpers */,
+				375A110D2140490300B0A77B /* SearchViewController.h */,
+				375A110E2140490400B0A77B /* SearchViewController.m */,
 				375A114321404E6A00B0A77B /* ResultsTableViewController.h */,
 				375A114421404E6A00B0A77B /* ResultsTableViewController.m */,
 				375A1146214052C600B0A77B /* ARViewController.h */,
@@ -188,6 +204,19 @@
 				3786576821414D820097D43E /* ProductDetailViewController.m */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3786576F214164B30097D43E /* AR Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				378657722141656B0097D43E /* ARAlertController.h */,
+				378657712141656B0097D43E /* ARAlertController.m */,
+				378657732141656B0097D43E /* ARGestureControl.h */,
+				378657742141656B0097D43E /* ARGestureControl.m */,
+				378657752141656B0097D43E /* ARSCNViewControl.h */,
+				378657702141656B0097D43E /* ARSCNViewControl.m */,
+			);
+			path = "AR Helpers";
 			sourceTree = "<group>";
 		};
 		40C6A87C96DBA6A24DF03A41 /* Pods */ = {
@@ -206,6 +235,7 @@
 		4C86F7A8AB0F2801F7A83451 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3725B5B12141AFCC0015F59B /* WebKit.framework */,
 				A9B9B4F7EDAE11E704A59E6C /* libPods-Shop VR.a */,
 				C729E76191A3378C716A78DE /* libPods-Shop VRTests.a */,
 				07EA5AABBA3AD4DF7D3E1A87 /* libPods-Shop VRUITests.a */,
@@ -319,8 +349,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				375A11172140490B00B0A77B /* LaunchScreen.storyboard in Resources */,
+				375A11172140490B00B0A77B /* Search.storyboard in Resources */,
 				375A11142140490B00B0A77B /* Assets.xcassets in Resources */,
+				3786576B2141517D0097D43E /* README.txt in Resources */,
 				375A11122140490400B0A77B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -403,12 +434,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				375A110F2140490400B0A77B /* ViewController.m in Sources */,
+				375A110F2140490400B0A77B /* SearchViewController.m in Sources */,
 				375A113F21404BB800B0A77B /* Product.m in Sources */,
 				375A114521404E6A00B0A77B /* ResultsTableViewController.m in Sources */,
 				3786576921414D820097D43E /* ProductDetailViewController.m in Sources */,
+				378657762141656B0097D43E /* ARSCNViewControl.m in Sources */,
 				375A114221404BE500B0A77B /* SearchResults.m in Sources */,
+				378657782141656B0097D43E /* ARGestureControl.m in Sources */,
 				375A111A2140490B00B0A77B /* main.m in Sources */,
+				378657772141656B0097D43E /* ARAlertController.m in Sources */,
 				375A1148214052C600B0A77B /* ARViewController.m in Sources */,
 				375A110C2140490300B0A77B /* AppDelegate.m in Sources */,
 			);
@@ -454,12 +488,12 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		375A11152140490B00B0A77B /* LaunchScreen.storyboard */ = {
+		375A11152140490B00B0A77B /* Search.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				375A11162140490B00B0A77B /* Base */,
 			);
-			name = LaunchScreen.storyboard;
+			name = Search.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

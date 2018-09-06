@@ -7,7 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <SceneKit/SceneKit.h>
+#import <ARKit/ARKit.h>
+#import <Photos/Photos.h>
+#import <AVFoundation/AVFoundation.h>
+
 
 @interface ARViewController : UIViewController
+
+
+@property (nonatomic, retain) NSMutableArray<SCNNode *> *sceneNode;
+@property (nonatomic, copy) NSString *sceneName;
+@property (nonatomic, assign) CGFloat currentYAngle;
+
+@property (strong, nonatomic) IBOutlet ARSCNView *sceneView;
+
+@property (nonatomic, strong) UIImage *productImage;
 
 @end

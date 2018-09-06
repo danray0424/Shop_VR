@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface SearchViewController : UIViewController
 
 @property (nonatomic, retain) IBOutlet UITextField    *searchTerm;
 @property (nonatomic, retain) IBOutlet UIButton       *searchButton;
