@@ -14,7 +14,7 @@
 		375A110F2140490400B0A77B /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 375A110E2140490400B0A77B /* SearchViewController.m */; };
 		375A11122140490400B0A77B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 375A11102140490400B0A77B /* Main.storyboard */; };
 		375A11142140490B00B0A77B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 375A11132140490B00B0A77B /* Assets.xcassets */; };
-		375A11172140490B00B0A77B /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 375A11152140490B00B0A77B /* Search.storyboard */; };
+		375A11172140490B00B0A77B /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 375A11152140490B00B0A77B /* Launch.storyboard */; };
 		375A111A2140490B00B0A77B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 375A11192140490B00B0A77B /* main.m */; };
 		375A11242140490C00B0A77B /* Shop_VRTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 375A11232140490C00B0A77B /* Shop_VRTests.m */; };
 		375A112F2140490C00B0A77B /* Shop_VRUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 375A112E2140490C00B0A77B /* Shop_VRUITests.m */; };
@@ -58,7 +58,7 @@
 		375A110E2140490400B0A77B /* SearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		375A11112140490400B0A77B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		375A11132140490B00B0A77B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		375A11162140490B00B0A77B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Search.storyboard; sourceTree = "<group>"; };
+		375A11162140490B00B0A77B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Launch.storyboard; sourceTree = "<group>"; };
 		375A11182140490B00B0A77B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		375A11192140490B00B0A77B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		375A111F2140490C00B0A77B /* Shop VRTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Shop VRTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -154,7 +154,7 @@
 				375A110B2140490300B0A77B /* AppDelegate.m */,
 				375A11102140490400B0A77B /* Main.storyboard */,
 				375A11132140490B00B0A77B /* Assets.xcassets */,
-				375A11152140490B00B0A77B /* Search.storyboard */,
+				375A11152140490B00B0A77B /* Launch.storyboard */,
 				375A11182140490B00B0A77B /* Info.plist */,
 				375A11192140490B00B0A77B /* main.m */,
 			);
@@ -349,7 +349,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				375A11172140490B00B0A77B /* Search.storyboard in Resources */,
+				375A11172140490B00B0A77B /* Launch.storyboard in Resources */,
 				375A11142140490B00B0A77B /* Assets.xcassets in Resources */,
 				3786576B2141517D0097D43E /* README.txt in Resources */,
 				375A11122140490400B0A77B /* Main.storyboard in Resources */,
@@ -488,12 +488,12 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		375A11152140490B00B0A77B /* Search.storyboard */ = {
+		375A11152140490B00B0A77B /* Launch.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				375A11162140490B00B0A77B /* Base */,
 			);
-			name = Search.storyboard;
+			name = Launch.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
