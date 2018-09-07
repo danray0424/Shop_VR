@@ -8,26 +8,29 @@ dan@danray.net
 
 OVERVIEW
 
-This app allows the user to place and interact with product images from shop.com in 3d space, using the iOS ARKit augmented reality API.
+This app allows the user to place and interact with product images from shop.com on a plane in 3d space, using the iOS ARKit augmented reality API.
 
 The first screen allows the user to query the Shop.com product search API with a search term of their choosing. It displays a list of results.
 
 The user can drill down to a detail page on any of the listed results.
 
-From there the user can place the product image on a detected plane AR space (e.g. a table top). The cards will stand up on the surface, and the user can move around and explore them.
+From there the user can place the product image on a detected plane AR space (e.g. a table top). You may need to "look around" a little--the app will let you know when it's detected a flat surface it can work with. Tap to add a card featuring the product image. The cards will stand up on the surface, and you can move around and explore them. Moving and scaling cards is not currently supported.
 
 
 
 INSTALLATION / BUILD
 
-The AR functionality won't run on the emulator. It requires a reasonably modern iPhone with iOS 11 or later. 
+The AR functionality won't run on the emulator. It requires an iPhone 6s or later, with iOS 11. 
 
-Probably best to attach a phone to a mac running Xcode, and build/deploy the app from there. I've turned on automatic certificate management, so it should be a one-click deal (though it will need to submit your phone's ID to the certificate portal, and may take several minutes "preparing debugger support" on your phone; you should let it do these things). 
+Per request I'm delivering an IPA file, though I've never used the iTunes-sync method of installing a develoment build (I have lots of experience with TestFlight and Crashlytics for deploying to testers). I don't personally sync my devices to iTunes, so I'm not set up to test that method. 
+
+I'd prefer you build directly to your phone. Please connect your phone to a mac running Xcode, and build/deploy the app from there. I've turned on automatic certificate management, so it should be a one-click deal (though it will need to submit your phone's ID to the certificate portal, and may take several minutes "preparing debugger support" on your phone; you should let it do these things). 
 
 Select your phone from the devices section of the Schemes drop down in the Xcode toolbar and hit the "play" button.
 
 Be sure you open the project from the workspace "Shop VR.xcworkspace" so Xcode will pick up and build the Pod dependencies project.
 
+If you have trouble installing this way, let me know and I'll set the app up in Crashlytics and get it to you that way.
 
 
 DEVELOPMENT COMMENTS
@@ -47,23 +50,24 @@ In response to the "Style the application beyond base styling", I implemented a 
 
 TODOS / KNOWN ISSUES
 
-This app is a coding demo and contains many choices made for development speed and code simplicity. There are features this is missing to be production-ready, and different architectural approaches and would need to happen on a production app. Namely:
+There are MANY iteration targets for this app, to make it more feature rich, usable, and production-ready: 
+
+
+* This is probably the most naive possible implementation of anything in ARKit. There's a whole lot that could be fine tuned here.
+
+  * It would be great to leave the AR session active while backing up the navigation stack, and put more than one picture into it.
+  * Support Resize/move for the 3d objects.
+  * Lighting estimation would help the AR objects blend into the real world better. As is, they seem a little stark.
+  * Currently all photo plane objects are oriented perpendicular to the direction the camera was facing when the AR session started. I'd prefer they be placed facing the camera is at the time of the tap. But detecting the camera's translation through space while the AR session is in flight appears to be a dark art.
+
 
 * For UI simplicity I limited the app to iPhone. ARKit runs great on iPad, so it would be nice to support that.
 
-* Support Resize/move for the 3d objects.
-
-* Tests would be extremely good to have.
-
-* Lighting estimation would help the AR objects blend into the real world better. As is, they seem a little stark.
-
-* Currently all photo plane objects are oriented perpendicular to the direction the camera was facing when the AR session started. I'd prefer they be placed facing the camera is at the time of the tap. But detecting the camera's translation through space while the AR session is in flight appears to be a dark art.
-
-* It would be neat to leave the AR session active while backing up the navigation stack, and put more than one picture into it.
+* Unit/UI tests would be extremely good to have.
 
 * Search results are retained only in memory. A production app should use some durable storage (Core Data or at least a small SQLite db).
 
-* I'm only showing the first page of search results that the API provides (configured to be 15 items). A complete version of this should be able to navigate the paginated results.
+* I'm only showing the first page of search results that the API provides (configured to be 15 items). A complete version of this should be able to navigate the paginated search results.
 
 * I would have liked to refactor the API access networking code into a single API client class. Since we have only two calls and both have quite different work to do with the data they receive, I left the networking code in the view controllers themselves, which isn't ideal.
 
