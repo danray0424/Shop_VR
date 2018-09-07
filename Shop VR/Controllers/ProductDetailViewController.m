@@ -24,8 +24,6 @@
     self.brandLabel.text = @"";
     self.nameLabel.text  = @"";
     self.placeButton.hidden = YES;
-    self.spinner.hidden = NO;
-    [self.spinner startAnimating];
     
     // configure and fire API call
     NSString *requestString = [NSString stringWithFormat:@"https://api.shop.com/AffiliatePublisherNetwork/v2/products/%@?publisherId=AP1234567&locale=en_US", self.product.productID];
