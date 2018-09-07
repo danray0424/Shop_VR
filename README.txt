@@ -20,7 +20,7 @@ INSTALLATION / BUILD
 
 The AR functionality won't run on the emulator. It requires a physical iPhone 6s or later, with iOS 11. 
 
-Per request I'm delivering an IPA file, though I've never used the iTunes-sync method of installing a develoment build (I have lots of experience with Crashlytics for deploying to testers, and some with TestFlight). As I don't personally sync my devices to iTunes, I'm not set up to test that method. 
+Per the assignment's requriement, I'm delivering an IPA file, though I've never used the iTunes-sync method of installing a develoment build (I have lots of experience with Crashlytics for deploying to testers, and some with TestFlight). Since I don't have your device IDs, I can't sign the app for your phones. So in short I don't believe this IPA is going to be installable.
 
 I'd prefer you build directly to your phone from Xcode. Please connect your phone to a mac running Xcode.  Be sure you open the project from the workspace "Shop VR.xcworkspace" and NOT the "Shop VR.xcodeproj", so Xcode will pick up and build the "Pods" dependencies project.
 
