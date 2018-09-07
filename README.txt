@@ -39,7 +39,7 @@ For UI simplicity, I limited the app to iPhones, and eliminated device rotation 
 
 I used auto-layout to design the interfaces. The design ought to more or less survive any iPhone screen geometry. Auto-layout can be VERY complicated to learn, but once you understand how it thinks, it's the tool for the job.
 
-On the product detail page, I started out with a raw text field for the product description, but quickly noticed that the product description is expressed in HTML. So I'm now rendering it in a WKWebView. I learned that how you control scaling in a WKWebView is by prepending a <header> tag with a viewport meta tag. Quite different from the UIWebView that it replaced!
+On the product detail page, I started out with a raw text field for the product description, but quickly noticed that the product description is expressed in HTML. So I'm now rendering it in a WKWebView. I learned that how you control scaling in a WKWebView is by prepending a <head> tag with a viewport meta tag. 
 
 In response to the "Style the application beyond base styling", I implemented a custom app icon and a custom launch screen.  
 
@@ -49,15 +49,15 @@ TODOS / KNOWN ISSUES
 There are many iteration targets for this app, to make it more featureful, usable, and production-ready: 
 
 
-* This is probably the most naive possible implementation of anything in ARKit. There's a WHOLE lot that could be enhanced here.
+* This is probably the most naive possible implementation of anything in ARKit, and I based it on a sample I found online. There's a WHOLE lot that could be learned and enhanced here.
 
    * It would be great to leave the AR session active while backing up the navigation stack, and put more than one product into it.
    * Support Resize/move for the 3d objects.
    * Lighting estimation would help the AR objects blend into the real world better. As is, they seem a little stark.
-   * Currently all photo plane objects are oriented perpendicular to the direction the camera was facing when the AR session started. I'd prefer they be placed facing the camera at the time of insertion. It turns out that detecting the camera's orientation is a complex thing that I didn't have time to understand for this exercise.
+   * Currently all photo plane objects are oriented facing toward the direction the camera was pointing when the AR session started. I'd prefer they be placed facing the camera at the time of insertion. It turns out that extracting the camera's orientation from ARKit's brain is a complex thing that I didn't have time to understand for this exercise.
 
 
-* For UI simplicity I limited the app to iPhone. ARKit runs great on iPad, so it would be nice to support that.
+* For UI simplicity I limited the app to iPhone. ARKit runs great on iPad, so it would be nice to do the UI design work to support that.
 
 * It needs Unit/UI tests before I'd call it production-ready.
 
