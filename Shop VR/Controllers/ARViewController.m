@@ -32,6 +32,7 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
+    // Activate ARKit session
     if (ARWorldTrackingConfiguration.isSupported) {
         [self startSession];
     } else {
@@ -86,7 +87,7 @@
     
     self.sceneView.delegate = self.sceneControl;
     self.sceneNode = [NSMutableArray new];
-    self.sceneView.showsStatistics = YES;
+    self.sceneView.showsStatistics = NO;
     self.sceneView.autoenablesDefaultLighting = YES;
     self.sceneView.debugOptions = SCNDebugOptionNone;
     
@@ -102,22 +103,6 @@
     configuration.planeDetection = ARPlaneDetectionHorizontal;
     [self.sceneView.session runWithConfiguration:configuration];
     
-}
-#pragma mark - Media Premission Check
-
--(void)checkMediaPermissionAndButtonState {
-    
-    dispatch_async(dispatch_get_main_queue(), ^{
-        AVAuthorizationStatus status = [AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeVideo];
-        if(status == AVAuthorizationStatusAuthorized || status == AVAuthorizationStatusNotDetermined) {
-            [self.alertController showOverlyText:@"STARTING A NEW SESSION, TRY MOVING LEFT OR RIGHT" withDuration:2];
-        } else {
-            NSString *accessDescription = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"NSCameraUsageDescription"];
-            [self.alertController showPermissionAlertWithDescription:accessDescription];
-        }
-        
-        self.currentYAngle = 0.0;
-    });
 }
 
 @end

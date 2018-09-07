@@ -15,8 +15,6 @@
 @property (nonatomic, weak) ARViewController *viewController;
 
 - (void)showUnsupportedAlert;
-- (void)showAddARNodeAlert;
 - (void)showOverlyText:(NSString *)text withDuration:(int)duration;
-- (void)showPermissionAlertWithDescription:(NSString *)accessDescription;
 
 @end

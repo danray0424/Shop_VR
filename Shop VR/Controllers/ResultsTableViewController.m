@@ -44,7 +44,8 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cells" forIndexPath:indexPath];
     
-    // Configure the cell...
+    // Extremely simple cell
+    // TODO better layout and nicer presentation
  
     Product *product = (Product *)[self.results.products objectAtIndex:indexPath.row];
     cell.textLabel.text = product.name;

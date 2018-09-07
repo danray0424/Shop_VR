@@ -16,6 +16,5 @@
 @property (nonatomic, weak) ARViewController *viewController;
 
 - (void)setupGestureRecognizer;
-- (void)removeARObject:(id)sender;
 
 @end

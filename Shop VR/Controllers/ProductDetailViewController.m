@@ -19,14 +19,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     
+    // Set up view for "empty" display
     self.brandLabel.text = @"";
     self.nameLabel.text  = @"";
     self.placeButton.hidden = YES;
+    self.spinner.hidden = NO;
+    [self.spinner startAnimating];
     
+    // configure and fire API call
     NSString *requestString = [NSString stringWithFormat:@"https://api.shop.com/AffiliatePublisherNetwork/v2/products/%@?publisherId=AP1234567&locale=en_US", self.product.productID];
-    
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:requestString]];
     NSString *apikey = (NSString *)[NSUserDefaults.standardUserDefaults objectForKey:@"apikey"];
     [request setValue:apikey forHTTPHeaderField:@"apikey"];
@@ -39,9 +41,12 @@
                                                 NSDictionary *searchResults = [NSJSONSerialization JSONObjectWithData:data
                                                                                                               options:NSJSONReadingAllowFragments
                                                                                                                 error:nil];
-                                    
+                                                
+                                                // The only field we didn't already get from the product search API
+                                                // is the long product description. Add it to our Product object.
                                                 self.product.productDescription = [searchResults objectForKey:@"description"];
                                                 
+                                                // Populate screen on main queue
                                                 dispatch_async(dispatch_get_main_queue(), ^{
                                                     self.spinner.hidden = YES;
                                                     self.placeButton.hidden = NO;
@@ -49,7 +54,7 @@
                                                     self.brandLabel.text = self.product.brand;
                                                     self.nameLabel.text = self.product.name;
                                                     
-                                                    // Stick a viewport header on the HTML to control scaling in the WKWebView
+                                                    // Glue a viewport header onto the HTML to control scaling in the WKWebView
                                                     NSString *sizedContent = [NSString stringWithFormat:@"<head><meta name='viewport' content='width=device-width, initial-scale=0.5, maximum-scale=0.5, minimum-scale=0.5'></head>%@", self.product.productDescription];
                                                     [self.productDescription loadHTMLString:sizedContent baseURL:nil];
                                                     
@@ -74,14 +79,6 @@
     [self.navigationController pushViewController:ar animated:YES];
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

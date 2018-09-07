@@ -23,7 +23,7 @@
 - (void)setupGestureRecognizer {
     
     // Tap Gesture
-    UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleAddObjectFrom:)];
+    UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(insertARObject:)];
     tapGestureRecognizer.numberOfTapsRequired = 1;
     [self.viewController.sceneView addGestureRecognizer:tapGestureRecognizer];
     
@@ -36,28 +36,23 @@
 }
 
 
-#pragma mark - Handle Gesture Recognizers
-
-- (void)handleAddObjectFrom: (UITapGestureRecognizer *)recognizer {
-    
-    [self insertARObject:recognizer];
-}
-
 
 #pragma mark - Insert AR Object
 
+
 - (void)insertARObject:(UITapGestureRecognizer *)recognizer {
     
+    // Test to see if our tap hits a known plane-shaped node in the AR scene
     CGPoint tapPoint = [recognizer locationInView:self.viewController.sceneView];
     NSArray<ARHitTestResult *> *result = [self.viewController.sceneView hitTest:tapPoint types:ARHitTestResultTypeExistingPlaneUsingExtent];
-    
     if (result.count == 0) {
         return;
     }
     
     ARHitTestResult *hitResult = [result firstObject];
     
-
+    // Build a new plane object, put the product image on it, position it at the tap point, and insert it
+    // TODO fix the orientation of the new plane to the rotation of the camera AT TAP TIME, rather than at AR world setup time.
     SCNPlane *plane = [SCNPlane planeWithWidth:.2 height:.2];
     plane.firstMaterial.diffuse.contents = self.viewController.productImage;
     plane.firstMaterial.doubleSided = YES;

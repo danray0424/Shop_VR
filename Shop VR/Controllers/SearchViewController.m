@@ -36,9 +36,11 @@
     self.spinner.hidden = NO;
     [self.spinner startAnimating];
     
+    // Clean up input string
     NSString *safeSearchText = [self.searchTerm.text stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
     NSString *requestString = [NSString stringWithFormat:@"https://api.shop.com/AffiliatePublisherNetwork/v2/products?publisherId=AP1234567&locale=en_US&perPage=15&term=%@", safeSearchText];
     
+    //Configure and fire API request
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:requestString]];
     NSString *apikey = (NSString *)[NSUserDefaults.standardUserDefaults objectForKey:@"apikey"];
     [request setValue:apikey forHTTPHeaderField:@"apikey"];
@@ -55,7 +57,7 @@
                                                 SearchResults *results = [[SearchResults alloc] init];
                                                 results.products = [NSMutableArray array];
                                                 
-                                                
+                                                // Iterate through products JSON object and store Product entities in SearchResults
                                                 NSArray *products = [searchResults objectForKey:@"products"];
                                                 for (NSDictionary *product in products) {
                                                     Product *item = [[Product alloc] init];
