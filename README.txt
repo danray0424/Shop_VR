@@ -54,7 +54,7 @@ There are many iteration targets for this app, to make it more featureful, usabl
    * It would be great to leave the AR session active while backing up the navigation stack, and put more than one product into it.
    * Support Resize/move for the 3d objects.
    * Lighting estimation would help the AR objects blend into the real world better. As is, they seem a little stark.
-   * Currently all photo plane objects are oriented perpendicular to the direction the camera was facing when the AR session started. I'd prefer they be placed facing the camera is at the time of the tap. It turns out that detecting the camera's orientation is a complex thing that I didn't have time to understand for this exercise.
+   * Currently all photo plane objects are oriented perpendicular to the direction the camera was facing when the AR session started. I'd prefer they be placed facing the camera at the time of insertion. It turns out that detecting the camera's orientation is a complex thing that I didn't have time to understand for this exercise.
 
 
 * For UI simplicity I limited the app to iPhone. ARKit runs great on iPad, so it would be nice to support that.
@@ -72,7 +72,7 @@ There are many iteration targets for this app, to make it more featureful, usabl
 * A production version of this would need to test for network accessibility, and do something sensible if it's unable to reach the API. This version of the app will just hang and fail if it's run offline.
 
 
-ACKNOWLEDGEMENTS/EXTERNALITIES
+ACKNOWLEDGEMENTS / DEPENDENCIES
 
 I used the following open source packages:
 
