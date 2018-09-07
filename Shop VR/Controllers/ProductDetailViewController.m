@@ -48,7 +48,10 @@
                                                     [self.productImage sd_setImageWithURL:[NSURL URLWithString:self.product.imageURL]];
                                                     self.brandLabel.text = self.product.brand;
                                                     self.nameLabel.text = self.product.name;
-                                                    [self.productDescription loadHTMLString:self.product.productDescription baseURL:nil];
+                                                    
+                                                    // Stick a viewport header on the HTML to control scaling in the WKWebView
+                                                    NSString *sizedContent = [NSString stringWithFormat:@"<head><meta name='viewport' content='width=device-width, initial-scale=0.5, maximum-scale=0.5, minimum-scale=0.5'></head>%@", self.product.productDescription];
+                                                    [self.productDescription loadHTMLString:sizedContent baseURL:nil];
                                                     
                                                 });
                                             }];
